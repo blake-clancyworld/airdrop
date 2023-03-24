@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_clancy_airdrop_tree" model="ir.ui.view">
+        <field name="name">clancy.airdrop.tree</field>
+        <field name="model">clancy.airdrop</field>
+        <field name="arch" type="xml">
+            <tree string="Clancy AirDrop">
+                <field name="name"/>
+                <field name="assigned_product_id"/>
+                <field name="publishing_date"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Predefined queries for Clancy AirDrop -->
+        <record id="query_all_users" model="clancy.airdrop.query">
+            <field name="name">All Users</field>
+            <field name="code">['|', ('customer', '=', True), ('supplier', '=', True)]</field>
+        </record>
+        <record id="query_active_customers" model="clancy.airdrop.query">
+            <field name="name">Active Customers</field>
+            <field name="code">['|', ('customer', '=', True), ('supplier', '=', True), ('active', '=', True)]</field>
+        </record>
+        <!-- Add more predefined queries here -->
+    </data>
+</odoo>

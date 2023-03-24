@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_clancy_airdrop_search" model="ir.ui.view">
+        <field name="name">clancy.airdrop.search</field>
+        <field name="model">clancy.airdrop</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="assigned_product_id"/>
+                <field name="publishing_date"/>
+                <field name="state"/>
+                <filter string="Predefined Queries" context="{'show_predefined_queries': 1}">
+                    <field name="query" string="Query" domain="[('query', '!=', False)]" options="{&quot;no_create&quot;: true}"/>
+                </filter>   
+            </search>
+        </field>
+    </record>
+</odoo>

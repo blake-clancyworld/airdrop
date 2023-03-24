@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_clancy_airdrop_kanban" model="ir.ui.view">
+        <field name="name">clancy.airdrop.kanban</field>
+        <field name="model">clancy.airdrop</field>
+        <field name="arch" type="xml">
+            <kanban string="Clancy AirDrop" create="false">
+                <field name="name"/>
+                <field name="assigned_product_id"/>
+                <field name="publishing_date"/>
+                <field name="state"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_kanban_global_click">
+                            <div class="oe_kanban_image">
+                                <field name="assigned_product_id" widget="image" options="{'zoom': 1}"/>
+                            </div>
+                            <div class="oe_kanban_details">
+                                <div class="oe_kanban_title">
+                                    <field name="name" placeholder="Name" />
+                                </div>
+                                <div class="oe_kanban_content">
+                                    <field name="state" placeholder="State" />
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+</odoo>

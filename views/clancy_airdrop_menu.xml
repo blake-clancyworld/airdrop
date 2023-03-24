@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <menuitem id="menu_clancy_airdrop" name="AirDrop" sequence="1"/>
+        <menuitem id="menu_clancy_airdrop_list" name="AirDrop List" parent="menu_clancy_airdrop" action="action_clancy_airdrop_list"/>
+        <menuitem id="menu_clancy_airdrop_create" name="Create AirDrop" parent="menu_clancy_airdrop" action="action_clancy_airdrop_create"/>
+    </data>
+</odoo>
