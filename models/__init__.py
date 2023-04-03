@@ -1,2 +1,5 @@
-from . import clancy_airdrop
-from . import clancy_airdrop_wizard
+# -*- coding: utf-8 -*-
+# Part of Odoo. See LICENSE file for full copyright and licensing details.
+
+from . import airdrop_contact
+from . import airdrop_list
